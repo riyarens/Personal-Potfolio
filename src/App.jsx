@@ -122,26 +122,31 @@ function App() {
           <h2 className="section-title">Featured <span>Projects</span></h2>
           <div className="projects-grid">
             <div className="project-card">
-              <img src="/project1-placeholder.png" alt="E-Commerce Interface" className="project-img" />
+              <img src="/project1-placeholder.png" alt="EchoRoom Platform" className="project-img" />
               <div className="project-content">
-                <h3 className="project-title">Modern E-Commerce UI</h3>
-                <p className="project-desc">A fully responsive, interactive e-commerce frontend built with React. Features include a shopping cart, dynamic product filtering, and an aesthetic dark-mode UI.</p>
+                <h3 className="project-title">EchoRoom Platform</h3>
+                <p className="project-desc">An open-source platform where communities share ideas, run small experiments, record outcomes, and reflect on what they learned — publicly and collaboratively.</p>
                 <div className="tech-stack">
-                  <span className="tech-tag">React</span>
-                  <span className="tech-tag">CSS</span>
-                  <span className="tech-tag">JavaScript</span>
+                  <span className="tech-tag">Open Source</span>
+                  <span className="tech-tag">Community</span>
+                </div>
+                <div style={{ marginTop: '1rem' }}>
+                  <a href="https://github.com/riyarens/EchoRoom-Community-Ideas-Experiments-Reflection-Platform" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ display: 'inline-block', padding: '0.5rem 1rem', fontSize: '0.9rem' }}>View GitHub Repo</a>
                 </div>
               </div>
             </div>
             <div className="project-card">
-              <img src="/project2-placeholder.png" alt="Python Backend API" className="project-img" />
+              <img src="/project2-placeholder.png" alt="Thinkathon Trail Mix" className="project-img" />
               <div className="project-content">
-                <h3 className="project-title">Task Management API</h3>
-                <p className="project-desc">A robust RESTful API developed with Python and Flask. Integrates token-based authentication and a relational database setup for efficient task tracking.</p>
+                <h3 className="project-title">Thinkathon Trail Mix</h3>
+                <p className="project-desc">Interactive application and interactive environment built with TypeScript and deployed on Vercel/Lovable.</p>
                 <div className="tech-stack">
-                  <span className="tech-tag">Python</span>
-                  <span className="tech-tag">Flask</span>
-                  <span className="tech-tag">SQL</span>
+                  <span className="tech-tag">TypeScript</span>
+                  <span className="tech-tag">Web App</span>
+                </div>
+                <div style={{ marginTop: '1rem', display: 'flex', gap: '0.5rem' }}>
+                  <a href="https://github.com/riyarens/Thinkathon-Trail-Mix" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Repo</a>
+                  <a href="https://sparkedmind.lovable.app" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Live Demo</a>
                 </div>
               </div>
             </div>
