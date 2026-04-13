@@ -123,6 +123,19 @@ function App() {
           <div className="experience-container" style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
             
             <div className="experience-card" style={{ background: 'var(--bg-secondary)', border: '1px solid var(--glass-border)', borderRadius: '1rem', padding: '2rem', transition: 'all 0.3s ease' }}>
+              <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>Open Source Contributor</h3>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', color: 'var(--text-secondary)', marginBottom: '1rem', fontSize: '0.9rem' }}>
+                <span style={{ color: 'var(--accent-secondary)', fontWeight: '600' }}>Open Source Quest (OSQ)</span>
+                <span>•</span>
+                <span>Feb 2026 – Mar 2026</span>
+              </div>
+              <ul style={{ listStylePosition: 'inside', color: 'var(--text-primary)', opacity: '0.9', lineHeight: '1.8' }}>
+                <li>Actively contributed to open-source software by resolving issues and implementing new features utilizing modern Git workflows.</li>
+                <li>Collaborated seamlessly with diverse global developers, significantly advancing technical problem-solving and software delivery skills.</li>
+              </ul>
+            </div>
+
+            <div className="experience-card" style={{ background: 'var(--bg-secondary)', border: '1px solid var(--glass-border)', borderRadius: '1rem', padding: '2rem', transition: 'all 0.3s ease' }}>
               <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>Android App Development Intern</h3>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', color: 'var(--text-secondary)', marginBottom: '1rem', fontSize: '0.9rem' }}>
                 <span style={{ color: 'var(--accent-secondary)', fontWeight: '600' }}>ICT Academy of Kerala</span>
