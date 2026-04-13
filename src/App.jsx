@@ -203,7 +203,7 @@ function App() {
           <h2 className="section-title">Featured <span>Projects</span></h2>
           <div className="projects-grid">
             <div className="project-card">
-              <img src="/project2-placeholder.png" alt="Borrow-box" className="project-img" />
+              <img src="/borrow-box.png" alt="Borrow-box" className="project-img" />
               <div className="project-content">
                 <h3 className="project-title">Borrow-box</h3>
                 <p className="project-desc">A platform application to facilitate borrowing and sharing, built seamlessly using JavaScript.</p>
@@ -218,7 +218,7 @@ function App() {
               </div>
             </div>
             <div className="project-card">
-              <img src="/project1-placeholder.png" alt="Expenso" className="project-img" />
+              <img src="/expenso.png" alt="Expenso" className="project-img" />
               <div className="project-content">
                 <h3 className="project-title">Expenso</h3>
                 <p className="project-desc">A modern interactive web application built with JavaScript for expense tracking.</p>
@@ -233,7 +233,7 @@ function App() {
               </div>
             </div>
             <div className="project-card">
-              <img src="/project1-placeholder.png" alt="Blood Buddy Connect" className="project-img" />
+              <img src="/blood-buddy.png" alt="Blood Buddy Connect" className="project-img" />
               <div className="project-content">
                 <h3 className="project-title">Blood Buddy Connect</h3>
                 <p className="project-desc">A healthcare connectivity platform designed to seamlessly link blood donors with recipients in crucial times.</p>
@@ -249,7 +249,7 @@ function App() {
             </div>
             
             <div className="project-card">
-              <img src="/project2-placeholder.png" alt="Thinkathon Trail Mix" className="project-img" />
+              <img src="/thinkathon.png" alt="Thinkathon Trail Mix" className="project-img" />
               <div className="project-content">
                 <h3 className="project-title">Thinkathon Trail Mix</h3>
                 <p className="project-desc">Interactive application and interactive environment built with TypeScript and deployed on Vercel/Lovable.</p>
