@@ -265,15 +265,20 @@ function App() {
                 <a href="mailto:contact@riyarens.example" aria-label="Email"><i className="fa-solid fa-envelope"></i></a>
               </div>
             </div>
-            <form className="contact-form" onSubmit={(e) => { e.preventDefault(); alert('Message sent! (Mock functionality)'); }}>
+            <form 
+              className="contact-form" 
+              action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScUreZ-moyf9cCsFeJgbDNrBfpIdNPyaYdixr4loUKWmUK5JQ/formResponse" 
+              method="POST" 
+              target="_blank"
+            >
               <div className="form-group">
-                <input type="text" placeholder="Your Name" required />
+                <input type="text" name="entry.281178604" placeholder="Your Name" required />
               </div>
               <div className="form-group">
-                <input type="email" placeholder="Your Email" required />
+                <input type="email" name="entry.1136000407" placeholder="Your Email" required />
               </div>
               <div className="form-group">
-                <textarea placeholder="Your Message" required></textarea>
+                <textarea name="entry.1823248003" placeholder="Your Message" required></textarea>
               </div>
               <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>Send Message</button>
             </form>
