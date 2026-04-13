@@ -178,7 +178,7 @@ function App() {
               <p>I am currently open for entry-level Software Developer roles or freelance opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
               <div className="social-links">
                 <a href="https://github.com/riyarens" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i className="fa-brands fa-github"></i></a>
-                <a href="#" aria-label="LinkedIn"><i className="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/in/riya-rens-913889281/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i className="fa-brands fa-linkedin-in"></i></a>
                 <a href="#" aria-label="Twitter"><i className="fa-brands fa-twitter"></i></a>
                 <a href="mailto:contact@riyarens.example" aria-label="Email"><i className="fa-solid fa-envelope"></i></a>
               </div>
