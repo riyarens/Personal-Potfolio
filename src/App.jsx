@@ -10,7 +10,7 @@ function App() {
       setNavScrolled(window.scrollY > 50);
       
       // Simple scroll spy logic
-      const sections = ['home', 'skills', 'projects', 'services', 'contact'];
+      const sections = ['home', 'skills', 'experience', 'projects', 'services', 'contact'];
       for (const section of sections) {
         const el = document.getElementById(section);
         if (el) {
@@ -44,7 +44,7 @@ function App() {
       <nav id="navbar" className={navScrolled ? 'nav-scrolled' : ''}>
         <div className="brand">Riya Rens</div>
         <ul className="nav-links">
-          {['#home', '#skills', '#projects', '#services', '#contact'].map((hash) => (
+          {['#home', '#skills', '#experience', '#projects', '#services', '#contact'].map((hash) => (
             <li key={hash}>
               <a 
                 href={hash} 
@@ -114,6 +114,53 @@ function App() {
               <i className="fa-solid fa-database skill-icon"></i>
               <p>Databases</p>
             </div>
+          </div>
+        </section>
+
+        {/* Experience Section */}
+        <section id="experience">
+          <h2 className="section-title">My <span>Experience</span></h2>
+          <div className="experience-container" style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+            
+            <div className="experience-card" style={{ background: 'var(--bg-secondary)', border: '1px solid var(--glass-border)', borderRadius: '1rem', padding: '2rem', transition: 'all 0.3s ease' }}>
+              <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>Android App Development Intern</h3>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', color: 'var(--text-secondary)', marginBottom: '1rem', fontSize: '0.9rem' }}>
+                <span style={{ color: 'var(--accent-secondary)', fontWeight: '600' }}>ICT Academy of Kerala</span>
+                <span>•</span>
+                <span>Jul – Aug 2024</span>
+                <span>•</span>
+                <span>Hybrid</span>
+              </div>
+              <ul style={{ listStylePosition: 'inside', color: 'var(--text-primary)', opacity: '0.9', lineHeight: '1.8' }}>
+                <li>Delivered app features using Android Studio; achieved Grade A completion.</li>
+                <li>Collaborated with cross-functional teams on UI layouts, navigation, and core functionality.</li>
+              </ul>
+            </div>
+
+            <div className="experience-card" style={{ background: 'var(--bg-secondary)', border: '1px solid var(--glass-border)', borderRadius: '1rem', padding: '2rem', transition: 'all 0.3s ease' }}>
+              <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>AI & Robotics Intern</h3>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', color: 'var(--text-secondary)', marginBottom: '1rem', fontSize: '0.9rem' }}>
+                <span style={{ color: 'var(--accent-secondary)', fontWeight: '600' }}>AccelMove Dynamics / STEM Robotics</span>
+                <span>•</span>
+                <span>Jan 2024</span>
+              </div>
+              <ul style={{ listStylePosition: 'inside', color: 'var(--text-primary)', opacity: '0.9', lineHeight: '1.8' }}>
+                <li>Contributed to team-based AI & robotics projects, demonstrating adaptability in a fast-paced tech environment.</li>
+              </ul>
+            </div>
+
+            <div className="experience-card" style={{ background: 'var(--bg-secondary)', border: '1px solid var(--glass-border)', borderRadius: '1rem', padding: '2rem', transition: 'all 0.3s ease' }}>
+              <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>NEC 2024 Finalist – Advance Track</h3>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', color: 'var(--text-secondary)', marginBottom: '1rem', fontSize: '0.9rem' }}>
+                <span style={{ color: 'var(--accent-secondary)', fontWeight: '600' }}>E-Cell, IIT Bombay</span>
+                <span>•</span>
+                <span>2024</span>
+              </div>
+              <ul style={{ listStylePosition: 'inside', color: 'var(--text-primary)', opacity: '0.9', lineHeight: '1.8' }}>
+                <li>Secured 9th place nationally; developed and pitched business strategies over a 6-month innovation program.</li>
+              </ul>
+            </div>
+
           </div>
         </section>
 
