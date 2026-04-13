@@ -4,6 +4,7 @@ import './index.css';
 function App() {
   const [navScrolled, setNavScrolled] = useState(false);
   const [activeHash, setActiveHash] = useState('#home');
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -265,11 +266,13 @@ function App() {
                 <a href="mailto:contact@riyarens.example" aria-label="Email"><i className="fa-solid fa-envelope"></i></a>
               </div>
             </div>
+            <iframe name="hidden_iframe" id="hidden_iframe" style={{display: 'none'}}></iframe>
             <form 
               className="contact-form" 
               action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScUreZ-moyf9cCsFeJgbDNrBfpIdNPyaYdixr4loUKWmUK5JQ/formResponse" 
               method="POST" 
-              target="_blank"
+              target="hidden_iframe"
+              onSubmit={() => setFormSubmitted(true)}
             >
               <div className="form-group">
                 <input type="text" name="entry.281178604" placeholder="Your Name" required />
@@ -285,6 +288,17 @@ function App() {
           </div>
         </section>
       </main>
+
+      {formSubmitted && (
+        <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.8)', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 1000, backdropFilter: 'blur(5px)' }}>
+          <div style={{ background: 'var(--bg-secondary)', padding: '3rem', borderRadius: '1.5rem', border: '1px solid rgba(139, 92, 246, 0.4)', textAlign: 'center', maxWidth: '400px', margin: '0 20px', boxShadow: '0 20px 40px rgba(0, 0, 0, 0.4)' }}>
+            <i className="fa-solid fa-circle-check" style={{ fontSize: '4.5rem', color: 'var(--accent-primary)', marginBottom: '1.5rem', textShadow: '0 0 20px rgba(139, 92, 246, 0.5)' }}></i>
+            <h2 style={{ marginBottom: '1rem', fontFamily: 'Outfit' }}>Message Sent!</h2>
+            <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem' }}>Thank you for reaching out! I'll quickly review your message and get back to you as soon as possible.</p>
+            <button className="btn btn-primary" onClick={() => setFormSubmitted(false)} style={{ width: '100%' }}>Awesome, thanks!</button>
+          </div>
+        </div>
+      )}
 
       <footer>
         <p>&copy; 2026 Riya Rens. Built with modern web technologies.</p>
