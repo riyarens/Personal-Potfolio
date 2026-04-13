@@ -68,6 +68,7 @@ function App() {
             <div className="cta-buttons">
               <a href="#projects" className="btn btn-primary" onClick={(e) => handleNavClick(e, '#projects')}>View My Work</a>
               <a href="#contact" className="btn btn-outline" onClick={(e) => handleNavClick(e, '#contact')}>Contact Me</a>
+              <a href="https://drive.google.com/drive/folders/10W1Rig0VeAMPVETy0raf1N4wJ_kq06-B?usp=drive_link" target="_blank" rel="noopener noreferrer" className="btn btn-outline">Resume</a>
             </div>
           </div>
           <div className="hero-image">
