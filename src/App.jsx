@@ -122,21 +122,6 @@ function App() {
           <h2 className="section-title">Featured <span>Projects</span></h2>
           <div className="projects-grid">
             <div className="project-card">
-              <img src="/project1-placeholder.png" alt="Expenso" className="project-img" />
-              <div className="project-content">
-                <h3 className="project-title">Expenso</h3>
-                <p className="project-desc">A modern interactive web application built with JavaScript for expense tracking.</p>
-                <div className="tech-stack">
-                  <span className="tech-tag">JavaScript</span>
-                  <span className="tech-tag">Web App</span>
-                </div>
-                <div style={{ marginTop: '1rem', display: 'flex', gap: '0.5rem' }}>
-                  <a href="https://github.com/riyarens/Expenso" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Repo</a>
-                  <a href="https://expenso-khaki.vercel.app" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Live Demo</a>
-                </div>
-              </div>
-            </div>
-            <div className="project-card">
               <img src="/project2-placeholder.png" alt="Borrow-box" className="project-img" />
               <div className="project-content">
                 <h3 className="project-title">Borrow-box</h3>
@@ -148,6 +133,21 @@ function App() {
                 <div style={{ marginTop: '1rem', display: 'flex', gap: '0.5rem' }}>
                   <a href="https://github.com/riyarens/Borrow-box" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Repo</a>
                   <a href="https://borrow-box-jade.vercel.app" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Live Demo</a>
+                </div>
+              </div>
+            </div>
+            <div className="project-card">
+              <img src="/project1-placeholder.png" alt="Expenso" className="project-img" />
+              <div className="project-content">
+                <h3 className="project-title">Expenso</h3>
+                <p className="project-desc">A modern interactive web application built with JavaScript for expense tracking.</p>
+                <div className="tech-stack">
+                  <span className="tech-tag">JavaScript</span>
+                  <span className="tech-tag">Web App</span>
+                </div>
+                <div style={{ marginTop: '1rem', display: 'flex', gap: '0.5rem' }}>
+                  <a href="https://github.com/riyarens/Expenso" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Repo</a>
+                  <a href="https://expenso-khaki.vercel.app" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Live Demo</a>
                 </div>
               </div>
             </div>
