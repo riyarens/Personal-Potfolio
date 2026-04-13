@@ -233,22 +233,6 @@ function App() {
               </div>
             </div>
             <div className="project-card">
-              <img src="/project2-placeholder.png" alt="Thinkathon Trail Mix" className="project-img" />
-              <div className="project-content">
-                <h3 className="project-title">Thinkathon Trail Mix</h3>
-                <p className="project-desc">Interactive application and interactive environment built with TypeScript and deployed on Vercel/Lovable.</p>
-                <div className="tech-stack">
-                  <span className="tech-tag">TypeScript</span>
-                  <span className="tech-tag">Web App</span>
-                </div>
-                <div style={{ marginTop: '1rem', display: 'flex', gap: '0.5rem' }}>
-                  <a href="https://github.com/riyarens/Thinkathon-Trail-Mix" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Repo</a>
-                  <a href="https://sparkedmind.lovable.app" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Live Demo</a>
-                </div>
-              </div>
-            </div>
-            
-            <div className="project-card">
               <img src="/project1-placeholder.png" alt="Blood Buddy Connect" className="project-img" />
               <div className="project-content">
                 <h3 className="project-title">Blood Buddy Connect</h3>
@@ -260,6 +244,22 @@ function App() {
                 <div style={{ marginTop: '1rem', display: 'flex', gap: '0.5rem' }}>
                   <a href="https://github.com/riyarens/blood-buddy-connect" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Repo</a>
                   <a href="https://blood-buddy-connect.vercel.app" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Live Demo</a>
+                </div>
+              </div>
+            </div>
+            
+            <div className="project-card">
+              <img src="/project2-placeholder.png" alt="Thinkathon Trail Mix" className="project-img" />
+              <div className="project-content">
+                <h3 className="project-title">Thinkathon Trail Mix</h3>
+                <p className="project-desc">Interactive application and interactive environment built with TypeScript and deployed on Vercel/Lovable.</p>
+                <div className="tech-stack">
+                  <span className="tech-tag">TypeScript</span>
+                  <span className="tech-tag">Web App</span>
+                </div>
+                <div style={{ marginTop: '1rem', display: 'flex', gap: '0.5rem' }}>
+                  <a href="https://github.com/riyarens/Thinkathon-Trail-Mix" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Repo</a>
+                  <a href="https://sparkedmind.lovable.app" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Live Demo</a>
                 </div>
               </div>
             </div>
