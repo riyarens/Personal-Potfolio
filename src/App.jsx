@@ -247,6 +247,21 @@ function App() {
                 </div>
               </div>
             </div>
+            
+            <div className="project-card">
+              <img src="/project1-placeholder.png" alt="Blood Buddy Connect" className="project-img" />
+              <div className="project-content">
+                <h3 className="project-title">Blood Buddy Connect</h3>
+                <p className="project-desc">A healthcare connectivity platform designed to seamlessly link blood donors with recipients in crucial times.</p>
+                <div className="tech-stack">
+                  <span className="tech-tag">JavaScript</span>
+                  <span className="tech-tag">Healthcare</span>
+                </div>
+                <div style={{ marginTop: '1rem', display: 'flex', gap: '0.5rem' }}>
+                  <a href="https://github.com/riyarens/blood-buddy-connect" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>View GitHub Repo</a>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
