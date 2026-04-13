@@ -84,36 +84,44 @@ function App() {
           <h2 className="section-title">My <span>Skills</span> & Expertise</h2>
           <div className="skills-grid">
             <div className="skill-card">
-              <i className="fa-brands fa-react skill-icon"></i>
-              <p>React.js</p>
+              <i className="fa-solid fa-network-wired skill-icon"></i>
+              <p>Data Structures & Algorithms</p>
             </div>
             <div className="skill-card">
-              <i className="fa-brands fa-python skill-icon"></i>
-              <p>Python</p>
-            </div>
-            <div className="skill-card">
-              <i className="fa-brands fa-js skill-icon"></i>
-              <p>JavaScript</p>
-            </div>
-            <div className="skill-card">
-              <i className="fa-brands fa-html5 skill-icon"></i>
-              <p>HTML5</p>
-            </div>
-            <div className="skill-card">
-              <i className="fa-brands fa-css3-alt skill-icon"></i>
-              <p>CSS3 / UI</p>
+              <i className="fa-solid fa-cubes skill-icon"></i>
+              <p>Object-Oriented Programming</p>
             </div>
             <div className="skill-card">
               <i className="fa-solid fa-brain skill-icon"></i>
               <p>Problem Solving</p>
             </div>
             <div className="skill-card">
-              <i className="fa-brands fa-git-alt skill-icon"></i>
-              <p>Git</p>
+              <i className="fa-brands fa-python skill-icon"></i>
+              <p>Python</p>
+            </div>
+            <div className="skill-card">
+              <i className="fa-brands fa-java skill-icon"></i>
+              <p>Java</p>
+            </div>
+            <div className="skill-card">
+              <i className="fa-brands fa-js skill-icon"></i>
+              <p>JavaScript</p>
+            </div>
+            <div className="skill-card">
+              <i className="fa-brands fa-react skill-icon"></i>
+              <p>React</p>
+            </div>
+            <div className="skill-card">
+              <i className="fa-brands fa-github skill-icon"></i>
+              <p>Git & GitHub</p>
             </div>
             <div className="skill-card">
               <i className="fa-solid fa-database skill-icon"></i>
-              <p>Databases</p>
+              <p>Database Management (SQL)</p>
+            </div>
+            <div className="skill-card">
+              <i className="fa-solid fa-bug-slash skill-icon"></i>
+              <p>Debugging & Code Optimization</p>
             </div>
           </div>
         </section>
