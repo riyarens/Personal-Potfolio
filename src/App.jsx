@@ -258,7 +258,8 @@ function App() {
                   <span className="tech-tag">Healthcare</span>
                 </div>
                 <div style={{ marginTop: '1rem', display: 'flex', gap: '0.5rem' }}>
-                  <a href="https://github.com/riyarens/blood-buddy-connect" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>View GitHub Repo</a>
+                  <a href="https://github.com/riyarens/blood-buddy-connect" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Repo</a>
+                  <a href="https://blood-buddy-connect.vercel.app" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Live Demo</a>
                 </div>
               </div>
             </div>
