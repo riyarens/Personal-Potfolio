@@ -123,6 +123,18 @@ function App() {
               <i className="fa-solid fa-bug-slash skill-icon"></i>
               <p>Debugging & Code Optimization</p>
             </div>
+            <div className="skill-card">
+              <i className="fa-solid fa-c skill-icon"></i>
+              <p>C</p>
+            </div>
+            <div className="skill-card">
+              <i className="fa-solid fa-globe skill-icon"></i>
+              <p>Networking</p>
+            </div>
+            <div className="skill-card">
+              <i className="fa-brands fa-microsoft skill-icon"></i>
+              <p>Microsoft 365</p>
+            </div>
           </div>
         </section>
 
