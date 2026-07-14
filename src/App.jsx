@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     const handleScroll = () => {
       setNavScrolled(window.scrollY > 50);
-      
+
       // Simple scroll spy logic
       const sections = ['home', 'skills', 'experience', 'projects', 'services', 'contact'];
       for (const section of sections) {
@@ -47,8 +47,8 @@ function App() {
         <ul className="nav-links">
           {['#home', '#skills', '#experience', '#projects', '#services', '#contact'].map((hash) => (
             <li key={hash}>
-              <a 
-                href={hash} 
+              <a
+                href={hash}
                 className={activeHash === hash ? 'active' : ''}
                 onClick={(e) => handleNavClick(e, hash)}
               >
@@ -69,7 +69,7 @@ function App() {
             <div className="cta-buttons">
               <a href="#projects" className="btn btn-primary" onClick={(e) => handleNavClick(e, '#projects')}>View My Work</a>
               <a href="#contact" className="btn btn-outline" onClick={(e) => handleNavClick(e, '#contact')}>Contact Me</a>
-              <a href="https://drive.google.com/drive/folders/10W1Rig0VeAMPVETy0raf1N4wJ_kq06-B?usp=drive_link" target="_blank" rel="noopener noreferrer" className="btn btn-outline">Resume</a>
+              <a href="/Riya_Rens_Resume.pdf" download="Riya_Rens_Resume.pdf" className="btn btn-outline">Download Resume</a>
             </div>
           </div>
           <div className="hero-image">
@@ -142,7 +142,23 @@ function App() {
         <section id="experience">
           <h2 className="section-title">My <span>Experience</span></h2>
           <div className="experience-container" style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-            
+
+            <div className="experience-card" style={{ background: 'var(--bg-secondary)', border: '1px solid var(--glass-border)', borderRadius: '1rem', padding: '2rem', transition: 'all 0.3s ease' }}>
+              <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>QA Testing Intern</h3>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', color: 'var(--text-secondary)', marginBottom: '1rem', fontSize: '0.9rem' }}>
+                <span style={{ color: 'var(--accent-secondary)', fontWeight: '600' }}>Docwo</span>
+                <span>•</span>
+                <span>May 2026 – June 2026</span>
+              </div>
+              <ul style={{ listStylePosition: 'inside', color: 'var(--text-primary)', opacity: '0.9', lineHeight: '1.8' }}>
+                <li>Performed manual, functional, regression, UI/UX, and validation testing for Android applications and web applications.</li>
+                <li>Executed test cases and reported bugs with clear reproduction steps.</li>
+                <li>Verified bug fixes after developer updates.</li>
+                <li>Participated in API testing using Postman.</li>
+                <li>Collaborated with developers to improve software quality and application stability.</li>
+              </ul>
+            </div>
+
             <div className="experience-card" style={{ background: 'var(--bg-secondary)', border: '1px solid var(--glass-border)', borderRadius: '1rem', padding: '2rem', transition: 'all 0.3s ease' }}>
               <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>Open Source Contributor</h3>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', color: 'var(--text-secondary)', marginBottom: '1rem', fontSize: '0.9rem' }}>
@@ -204,6 +220,25 @@ function App() {
           <div className="projects-grid">
             <div className="project-card">
               <div className="project-content">
+                <h3 className="project-title">CosmoBot – AI Cosmetic Analyzer</h3>
+                <p className="project-desc">An AI-powered cosmetic ingredient analyzer that helps users understand cosmetic products by extracting ingredient lists using OCR and analyzing them with Google Gemini AI. The application provides ingredient explanations, identifies potentially harmful chemicals, stores scan history, and offers an intuitive user experience.</p>
+                <div className="tech-stack">
+                  <span className="tech-tag">React</span>
+                  <span className="tech-tag">TypeScript</span>
+                  <span className="tech-tag">Node.js</span>
+                  <span className="tech-tag">Firebase</span>
+                  <span className="tech-tag">Google Gemini API</span>
+                  <span className="tech-tag">OCR</span>
+                </div>
+                <div style={{ marginTop: '1rem', display: 'flex', gap: '0.5rem' }}>
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>GitHub</a>
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Live Demo</a>
+                </div>
+              </div>
+            </div>
+
+            <div className="project-card">
+              <div className="project-content">
                 <h3 className="project-title">Borrow-box</h3>
                 <p className="project-desc">A platform application to facilitate borrowing and sharing, built seamlessly using JavaScript.</p>
                 <div className="tech-stack">
@@ -216,6 +251,23 @@ function App() {
                 </div>
               </div>
             </div>
+
+            <div className="project-card">
+              <div className="project-content">
+                <h3 className="project-title">NovaStream Video Player</h3>
+                <p className="project-desc">Developed an Android video player with playback and fullscreen controls.</p>
+                <div className="tech-stack">
+                  <span className="tech-tag">Java</span>
+                  <span className="tech-tag">Android Studio</span>
+                  <span className="tech-tag">XML</span>
+                </div>
+                <div style={{ marginTop: '1rem', display: 'flex', gap: '0.5rem' }}>
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>GitHub</a>
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Live Demo</a>
+                </div>
+              </div>
+            </div>
+
             <div className="project-card">
               <div className="project-content">
                 <h3 className="project-title">Expenso</h3>
@@ -244,7 +296,7 @@ function App() {
                 </div>
               </div>
             </div>
-            
+
             <div className="project-card">
               <div className="project-content">
                 <h3 className="project-title">Thinkathon Trail Mix</h3>
@@ -298,11 +350,11 @@ function App() {
                 <a href="mailto:contact@riyarens.example" aria-label="Email"><i className="fa-solid fa-envelope"></i></a>
               </div>
             </div>
-            <iframe name="hidden_iframe" id="hidden_iframe" style={{display: 'none'}}></iframe>
-            <form 
-              className="contact-form" 
-              action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScUreZ-moyf9cCsFeJgbDNrBfpIdNPyaYdixr4loUKWmUK5JQ/formResponse" 
-              method="POST" 
+            <iframe name="hidden_iframe" id="hidden_iframe" style={{ display: 'none' }}></iframe>
+            <form
+              className="contact-form"
+              action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScUreZ-moyf9cCsFeJgbDNrBfpIdNPyaYdixr4loUKWmUK5JQ/formResponse"
+              method="POST"
               target="hidden_iframe"
               onSubmit={() => setFormSubmitted(true)}
             >
