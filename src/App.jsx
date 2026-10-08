@@ -10,8 +10,8 @@ function App() {
     const handleScroll = () => {
       setNavScrolled(window.scrollY > 50);
 
-      // Simple scroll spy logic
-      const sections = ['home', 'skills', 'experience', 'projects', 'services', 'contact'];
+      // Scroll spy logic
+      const sections = ['home', 'skills', 'experience', 'projects', 'education', 'certifications', 'services', 'contact'];
       for (const section of sections) {
         const el = document.getElementById(section);
         if (el) {
@@ -45,7 +45,7 @@ function App() {
       <nav id="navbar" className={navScrolled ? 'nav-scrolled' : ''}>
         <div className="brand">Riya Rens</div>
         <ul className="nav-links">
-          {['#home', '#skills', '#experience', '#projects', '#services', '#contact'].map((hash) => (
+          {['#home', '#skills', '#experience', '#projects', '#education', '#certifications', '#services', '#contact'].map((hash) => (
             <li key={hash}>
               <a
                 href={hash}
@@ -65,7 +65,7 @@ function App() {
           <div className="hero-content">
             <span className="greeting">Hello World!</span>
             <h1>I'm Riya Rens</h1>
-            <p>An aspiring <strong>Software Developer</strong> and final-year Computer Science Engineering student. I specialize in building dynamic web applications using React and Python, continuously pushing myself to solve complex problems and create aesthetic, functional software.</p>
+            <p>Fourth-year <strong>Computer Science Engineering student</strong> with hands-on experience in mobile and full-stack application development using React, React Native, TypeScript, JavaScript, Flutter, Node.js, and Firebase. Experienced in building AI-powered applications integrating machine learning, OCR, APIs, and cloud services, with a strong foundation in software development and problem-solving.</p>
             <div className="cta-buttons">
               <a href="#projects" className="btn btn-primary" onClick={(e) => handleNavClick(e, '#projects')}>View My Work</a>
               <a href="#contact" className="btn btn-outline" onClick={(e) => handleNavClick(e, '#contact')}>Contact Me</a>
@@ -82,59 +82,218 @@ function App() {
         {/* Skills Section */}
         <section id="skills">
           <h2 className="section-title">My <span>Skills</span> & Expertise</h2>
-          <div className="skills-grid">
-            <div className="skill-card">
-              <i className="fa-solid fa-network-wired skill-icon"></i>
-              <p>Data Structures & Algorithms</p>
+          <div className="skills-categories-grid">
+            
+            {/* 1. Programming */}
+            <div className="skills-category-card">
+              <div className="category-header">
+                <i className="fa-solid fa-code category-icon"></i>
+                <h3>Programming</h3>
+              </div>
+              <div className="skills-grid">
+                <div className="skill-card">
+                  <i className="fa-brands fa-python skill-icon"></i>
+                  <p>Python</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-brands fa-java skill-icon"></i>
+                  <p>Java</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-solid fa-c skill-icon"></i>
+                  <p>C</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-brands fa-js skill-icon"></i>
+                  <p>JavaScript</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-solid fa-file-code skill-icon"></i>
+                  <p>TypeScript</p>
+                </div>
+              </div>
             </div>
-            <div className="skill-card">
-              <i className="fa-solid fa-cubes skill-icon"></i>
-              <p>Object-Oriented Programming</p>
+
+            {/* 2. Web & Software Development */}
+            <div className="skills-category-card">
+              <div className="category-header">
+                <i className="fa-solid fa-laptop-code category-icon"></i>
+                <h3>Web & Software Development</h3>
+              </div>
+              <div className="skills-grid">
+                <div className="skill-card">
+                  <i className="fa-brands fa-react skill-icon"></i>
+                  <p>React</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-solid fa-mobile-screen-button skill-icon"></i>
+                  <p>React Native</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-brands fa-node-js skill-icon"></i>
+                  <p>Node.js</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-solid fa-layer-group skill-icon"></i>
+                  <p>Flutter</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-brands fa-html5 skill-icon"></i>
+                  <p>HTML</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-brands fa-css3-alt skill-icon"></i>
+                  <p>CSS</p>
+                </div>
+              </div>
             </div>
-            <div className="skill-card">
-              <i className="fa-solid fa-brain skill-icon"></i>
-              <p>Problem Solving</p>
+
+            {/* 3. Databases */}
+            <div className="skills-category-card">
+              <div className="category-header">
+                <i className="fa-solid fa-database category-icon"></i>
+                <h3>Databases</h3>
+              </div>
+              <div className="skills-grid">
+                <div className="skill-card">
+                  <i className="fa-solid fa-server skill-icon"></i>
+                  <p>SQL</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-solid fa-leaf skill-icon"></i>
+                  <p>MongoDB</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-solid fa-fire skill-icon"></i>
+                  <p>Firebase</p>
+                </div>
+              </div>
             </div>
-            <div className="skill-card">
-              <i className="fa-brands fa-python skill-icon"></i>
-              <p>Python</p>
+
+            {/* 4. AI/ML */}
+            <div className="skills-category-card">
+              <div className="category-header">
+                <i className="fa-solid fa-brain category-icon"></i>
+                <h3>AI/ML</h3>
+              </div>
+              <div className="skills-grid">
+                <div className="skill-card">
+                  <i className="fa-solid fa-microchip skill-icon"></i>
+                  <p>Machine Learning</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-solid fa-robot skill-icon"></i>
+                  <p>Artificial Intelligence</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-solid fa-chart-diagram skill-icon"></i>
+                  <p>Scikit-learn</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-solid fa-wand-magic-sparkles skill-icon"></i>
+                  <p>Google Gemini API</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-solid fa-eye skill-icon"></i>
+                  <p>OCR</p>
+                </div>
+              </div>
             </div>
-            <div className="skill-card">
-              <i className="fa-brands fa-java skill-icon"></i>
-              <p>Java</p>
+
+            {/* 5. Cloud & Tools */}
+            <div className="skills-category-card">
+              <div className="category-header">
+                <i className="fa-solid fa-cloud category-icon"></i>
+                <h3>Cloud & Tools</h3>
+              </div>
+              <div className="skills-grid">
+                <div className="skill-card">
+                  <i className="fa-brands fa-aws skill-icon"></i>
+                  <p>AWS</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-brands fa-microsoft skill-icon"></i>
+                  <p>Azure</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-brands fa-git-alt skill-icon"></i>
+                  <p>Git</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-brands fa-github skill-icon"></i>
+                  <p>GitHub</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-solid fa-code skill-icon"></i>
+                  <p>VS Code</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-solid fa-paper-plane skill-icon"></i>
+                  <p>Postman</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-brands fa-android skill-icon"></i>
+                  <p>Android Studio</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-solid fa-book-open skill-icon"></i>
+                  <p>Jupyter Notebook</p>
+                </div>
+              </div>
             </div>
-            <div className="skill-card">
-              <i className="fa-brands fa-js skill-icon"></i>
-              <p>JavaScript</p>
+
+            {/* 6. Testing */}
+            <div className="skills-category-card">
+              <div className="category-header">
+                <i className="fa-solid fa-vial-circle-check category-icon"></i>
+                <h3>Testing</h3>
+              </div>
+              <div className="skills-grid">
+                <div className="skill-card">
+                  <i className="fa-solid fa-clipboard-check skill-icon"></i>
+                  <p>Manual Testing</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-solid fa-gears skill-icon"></i>
+                  <p>Functional Testing</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-solid fa-rotate-left skill-icon"></i>
+                  <p>Regression Testing</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-solid fa-display skill-icon"></i>
+                  <p>UI/UX Testing</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-solid fa-bug skill-icon"></i>
+                  <p>Bug Reporting</p>
+                </div>
+              </div>
             </div>
-            <div className="skill-card">
-              <i className="fa-brands fa-react skill-icon"></i>
-              <p>React</p>
+
+            {/* 7. Languages */}
+            <div className="skills-category-card">
+              <div className="category-header">
+                <i className="fa-solid fa-language category-icon"></i>
+                <h3>Languages</h3>
+              </div>
+              <div className="skills-grid">
+                <div className="skill-card">
+                  <i className="fa-solid fa-comments skill-icon"></i>
+                  <p>English</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-solid fa-comment-dots skill-icon"></i>
+                  <p>Malayalam</p>
+                </div>
+                <div className="skill-card">
+                  <i className="fa-solid fa-comment skill-icon"></i>
+                  <p>Hindi</p>
+                </div>
+              </div>
             </div>
-            <div className="skill-card">
-              <i className="fa-brands fa-github skill-icon"></i>
-              <p>Git & GitHub</p>
-            </div>
-            <div className="skill-card">
-              <i className="fa-solid fa-database skill-icon"></i>
-              <p>Database Management (SQL)</p>
-            </div>
-            <div className="skill-card">
-              <i className="fa-solid fa-bug-slash skill-icon"></i>
-              <p>Debugging & Code Optimization</p>
-            </div>
-            <div className="skill-card">
-              <i className="fa-solid fa-c skill-icon"></i>
-              <p>C</p>
-            </div>
-            <div className="skill-card">
-              <i className="fa-solid fa-globe skill-icon"></i>
-              <p>Networking</p>
-            </div>
-            <div className="skill-card">
-              <i className="fa-brands fa-microsoft skill-icon"></i>
-              <p>Microsoft 365</p>
-            </div>
+
           </div>
         </section>
 
@@ -151,11 +310,8 @@ function App() {
                 <span>May 2026 – June 2026</span>
               </div>
               <ul style={{ listStylePosition: 'inside', color: 'var(--text-primary)', opacity: '0.9', lineHeight: '1.8' }}>
-                <li>Performed manual, functional, regression, UI/UX, and validation testing for Android applications and web applications.</li>
-                <li>Executed test cases and reported bugs with clear reproduction steps.</li>
-                <li>Verified bug fixes after developer updates.</li>
-                <li>Participated in API testing using Postman.</li>
-                <li>Collaborated with developers to improve software quality and application stability.</li>
+                <li>Performed manual, functional, UI/UX, validation and regression testing for web and mobile applications.</li>
+                <li>Reported defects with detailed reproduction steps and collaborated with developers to verify fixes.</li>
               </ul>
             </div>
 
@@ -167,8 +323,7 @@ function App() {
                 <span>Feb 2026 – Mar 2026</span>
               </div>
               <ul style={{ listStylePosition: 'inside', color: 'var(--text-primary)', opacity: '0.9', lineHeight: '1.8' }}>
-                <li>Actively contributed to open-source software by resolving issues and implementing new features utilizing modern Git workflows.</li>
-                <li>Collaborated seamlessly with diverse global developers, significantly advancing technical problem-solving and software delivery skills.</li>
+                <li>Contributed features and fixes using Git workflows while collaborating with open-source developers.</li>
               </ul>
             </div>
 
@@ -178,24 +333,21 @@ function App() {
                 <span style={{ color: 'var(--accent-secondary)', fontWeight: '600' }}>ICT Academy of Kerala</span>
                 <span>•</span>
                 <span>Jul – Aug 2024</span>
-                <span>•</span>
-                <span>Hybrid</span>
               </div>
               <ul style={{ listStylePosition: 'inside', color: 'var(--text-primary)', opacity: '0.9', lineHeight: '1.8' }}>
-                <li>Delivered app features using Android Studio; achieved Grade A completion.</li>
-                <li>Collaborated with cross-functional teams on UI layouts, navigation, and core functionality.</li>
+                <li>Developed Android application features using Android Studio and completed the internship with Grade A.</li>
               </ul>
             </div>
 
             <div className="experience-card" style={{ background: 'var(--bg-secondary)', border: '1px solid var(--glass-border)', borderRadius: '1rem', padding: '2rem', transition: 'all 0.3s ease' }}>
               <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>AI & Robotics Intern</h3>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', color: 'var(--text-secondary)', marginBottom: '1rem', fontSize: '0.9rem' }}>
-                <span style={{ color: 'var(--accent-secondary)', fontWeight: '600' }}>AccelMove Dynamics / STEM Robotics</span>
+                <span style={{ color: 'var(--accent-secondary)', fontWeight: '600' }}>AccelMove Dynamics</span>
                 <span>•</span>
                 <span>Jan 2024</span>
               </div>
               <ul style={{ listStylePosition: 'inside', color: 'var(--text-primary)', opacity: '0.9', lineHeight: '1.8' }}>
-                <li>Contributed to team-based AI & robotics projects, demonstrating adaptability in a fast-paced tech environment.</li>
+                <li>Completed an internship in AI and Robotics, gaining introductory exposure to AI concepts, robotics applications, and technology-driven problem-solving.</li>
               </ul>
             </div>
 
@@ -204,10 +356,10 @@ function App() {
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', color: 'var(--text-secondary)', marginBottom: '1rem', fontSize: '0.9rem' }}>
                 <span style={{ color: 'var(--accent-secondary)', fontWeight: '600' }}>E-Cell, IIT Bombay</span>
                 <span>•</span>
-                <span>2024</span>
+                <span>Aug 2024 – Feb 2025</span>
               </div>
               <ul style={{ listStylePosition: 'inside', color: 'var(--text-primary)', opacity: '0.9', lineHeight: '1.8' }}>
-                <li>Secured 9th place nationally; developed and pitched business strategies over a 6-month innovation program.</li>
+                <li>Participated in a 6-month national-level entrepreneurship challenge and secured 9th place nationally in the Advance Track.</li>
               </ul>
             </div>
 
@@ -218,10 +370,29 @@ function App() {
         <section id="projects">
           <h2 className="section-title">Featured <span>Projects</span></h2>
           <div className="projects-grid">
+
+            <div className="project-card">
+              <div className="project-content">
+                <h3 className="project-title">SpendSense – AI-Powered Expense Tracker</h3>
+                <p className="project-desc">Developed an AI-powered Flutter mobile application for automated income and expense tracking using ML-based expense categorization, OCR receipt extraction, and SMS transaction parsing. Integrated Firebase for secure data storage, spending charts, budget alerts, and AI-driven spending insights.</p>
+                <div className="tech-stack">
+                  <span className="tech-tag">Flutter</span>
+                  <span className="tech-tag">Dart</span>
+                  <span className="tech-tag">Machine Learning</span>
+                  <span className="tech-tag">OCR</span>
+                  <span className="tech-tag">SMS Parsing</span>
+                  <span className="tech-tag">Firebase</span>
+                </div>
+                <div style={{ marginTop: '1rem', display: 'flex', gap: '0.5rem' }}>
+                  <a href="https://github.com/riyarens" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>GitHub</a>
+                </div>
+              </div>
+            </div>
+
             <div className="project-card">
               <div className="project-content">
                 <h3 className="project-title">CosmoBot – AI Cosmetic Analyzer</h3>
-                <p className="project-desc">An AI-powered cosmetic ingredient analyzer that helps users understand cosmetic products by extracting ingredient lists using OCR and analyzing them with Google Gemini AI. The application provides ingredient explanations, identifies potentially harmful chemicals, stores scan history, and offers an intuitive user experience.</p>
+                <p className="project-desc">Developed an AI-powered cosmetic ingredient analyzer using OCR and Google Gemini API to extract and analyze cosmetic ingredients. Implemented authentication and history tracking to allow users to securely access previous analyses with AI-generated insights.</p>
                 <div className="tech-stack">
                   <span className="tech-tag">React</span>
                   <span className="tech-tag">TypeScript</span>
@@ -231,19 +402,20 @@ function App() {
                   <span className="tech-tag">OCR</span>
                 </div>
                 <div style={{ marginTop: '1rem', display: 'flex', gap: '0.5rem' }}>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>GitHub</a>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Live Demo</a>
+                  <a href="https://github.com/riyarens" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>GitHub</a>
                 </div>
               </div>
             </div>
 
             <div className="project-card">
               <div className="project-content">
-                <h3 className="project-title">Borrow-box</h3>
-                <p className="project-desc">A platform application to facilitate borrowing and sharing, built seamlessly using JavaScript.</p>
+                <h3 className="project-title">BorrowBox</h3>
+                <p className="project-desc">Built a campus marketplace supporting borrow, buy/sell, and Lost & Found services. Developed a responsive user interface for browsing listings and managing marketplace activities with Firebase backend services.</p>
                 <div className="tech-stack">
-                  <span className="tech-tag">JavaScript</span>
                   <span className="tech-tag">React</span>
+                  <span className="tech-tag">Firebase</span>
+                  <span className="tech-tag">Node.js</span>
+                  <span className="tech-tag">JavaScript</span>
                 </div>
                 <div style={{ marginTop: '1rem', display: 'flex', gap: '0.5rem' }}>
                   <a href="https://github.com/riyarens/Borrow-box" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Repo</a>
@@ -255,61 +427,102 @@ function App() {
             <div className="project-card">
               <div className="project-content">
                 <h3 className="project-title">NovaStream Video Player</h3>
-                <p className="project-desc">Developed an Android video player with playback and fullscreen controls.</p>
+                <p className="project-desc">Developed an Android video player with playback and fullscreen controls. Implemented core video playback functionality using Android Studio with custom interface controls.</p>
                 <div className="tech-stack">
                   <span className="tech-tag">Java</span>
                   <span className="tech-tag">Android Studio</span>
                   <span className="tech-tag">XML</span>
                 </div>
                 <div style={{ marginTop: '1rem', display: 'flex', gap: '0.5rem' }}>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>GitHub</a>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Live Demo</a>
+                  <a href="https://github.com/riyarens" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>GitHub</a>
                 </div>
               </div>
             </div>
 
-            <div className="project-card">
-              <div className="project-content">
-                <h3 className="project-title">Expenso</h3>
-                <p className="project-desc">A modern interactive web application built with JavaScript for expense tracking.</p>
-                <div className="tech-stack">
-                  <span className="tech-tag">JavaScript</span>
-                  <span className="tech-tag">Web App</span>
-                </div>
-                <div style={{ marginTop: '1rem', display: 'flex', gap: '0.5rem' }}>
-                  <a href="https://github.com/riyarens/Expenso" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Repo</a>
-                  <a href="https://expenso-khaki.vercel.app" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Live Demo</a>
-                </div>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="project-content">
-                <h3 className="project-title">Blood Buddy Connect</h3>
-                <p className="project-desc">A healthcare connectivity platform designed to seamlessly link blood donors with recipients in crucial times.</p>
-                <div className="tech-stack">
-                  <span className="tech-tag">JavaScript</span>
-                  <span className="tech-tag">Healthcare</span>
-                </div>
-                <div style={{ marginTop: '1rem', display: 'flex', gap: '0.5rem' }}>
-                  <a href="https://github.com/riyarens/blood-buddy-connect" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Repo</a>
-                  <a href="https://blood-buddy-connect.vercel.app" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Live Demo</a>
-                </div>
-              </div>
+          </div>
+        </section>
+
+        {/* Education Section */}
+        <section id="education">
+          <h2 className="section-title">My <span>Education</span></h2>
+          <div className="education-container">
+            <div className="education-card">
+              <span className="card-badge">2023 – 2027</span>
+              <h3>B.Tech in Computer Science Engineering</h3>
+              <p style={{ color: 'var(--accent-secondary)', fontWeight: '600', marginTop: '0.25rem' }}>Jyothi Engineering College, Thrissur</p>
+              <p style={{ color: 'var(--text-primary)', marginTop: '0.75rem', fontWeight: '500' }}>CGPA: 8.02 / 10</p>
             </div>
 
-            <div className="project-card">
-              <div className="project-content">
-                <h3 className="project-title">Thinkathon Trail Mix</h3>
-                <p className="project-desc">Interactive application and interactive environment built with TypeScript and deployed on Vercel/Lovable.</p>
-                <div className="tech-stack">
-                  <span className="tech-tag">TypeScript</span>
-                  <span className="tech-tag">Web App</span>
-                </div>
-                <div style={{ marginTop: '1rem', display: 'flex', gap: '0.5rem' }}>
-                  <a href="https://github.com/riyarens/Thinkathon-Trail-Mix" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Repo</a>
-                  <a href="https://sparkedmind.lovable.app" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Live Demo</a>
-                </div>
-              </div>
+            <div className="education-card">
+              <span className="card-badge">2021 – 2023</span>
+              <h3>Class XII (HSE)</h3>
+              <p style={{ color: 'var(--accent-secondary)', fontWeight: '600', marginTop: '0.25rem' }}>St Thomas HSS Thiroor, Kerala State Board</p>
+              <p style={{ color: 'var(--text-primary)', marginTop: '0.75rem', fontWeight: '500' }}>Percentage: 99%</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Certifications & Achievements Section */}
+        <section id="certifications">
+          <h2 className="section-title">Certifications & <span>Achievements</span></h2>
+          
+          <h3 style={{ textAlign: 'center', marginBottom: '2rem', fontSize: '1.5rem', color: 'var(--text-primary)' }}>Key Achievements</h3>
+          <div className="achievements-grid" style={{ marginBottom: '4rem' }}>
+            <div className="achievement-card">
+              <i className="fa-solid fa-trophy" style={{ fontSize: '2rem', color: 'var(--accent-primary)', marginBottom: '1rem' }}></i>
+              <h4 style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>Tinkerhack 2026</h4>
+              <p style={{ color: 'var(--text-secondary)' }}>College Level Winner & Top 300 Statewide in Kerala</p>
+            </div>
+
+            <div className="achievement-card">
+              <i className="fa-solid fa-award" style={{ fontSize: '2rem', color: 'var(--accent-primary)', marginBottom: '1rem' }}></i>
+              <h4 style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>THINKATHON Hackathon 2026</h4>
+              <p style={{ color: 'var(--text-secondary)' }}>1st Prize Winner</p>
+            </div>
+
+            <div className="achievement-card">
+              <i className="fa-solid fa-star" style={{ fontSize: '2rem', color: 'var(--accent-primary)', marginBottom: '1rem' }}></i>
+              <h4 style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>Grace Hopper Celebration India (GHCI) 2026</h4>
+              <p style={{ color: 'var(--text-secondary)' }}>Selected Attendee</p>
+            </div>
+
+            <div className="achievement-card">
+              <i className="fa-solid fa-medal" style={{ fontSize: '2rem', color: 'var(--accent-primary)', marginBottom: '1rem' }}></i>
+              <h4 style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>NEC 2024 Finalist (E-Cell IIT Bombay)</h4>
+              <p style={{ color: 'var(--text-secondary)' }}>Secured 9th Place Nationally (Advance Track)</p>
+            </div>
+          </div>
+
+          <h3 style={{ textAlign: 'center', marginBottom: '2rem', fontSize: '1.5rem', color: 'var(--text-primary)' }}>Professional Certifications</h3>
+          <div className="certifications-container">
+            <div className="certification-card">
+              <span className="card-badge">2026</span>
+              <h3>AWS Cloud Practitioner Essentials</h3>
+              <p style={{ color: 'var(--accent-secondary)', fontWeight: '600', marginTop: '0.25rem' }}>AWS Training & Certification</p>
+            </div>
+
+            <div className="certification-card">
+              <span className="card-badge">Cisco Academy</span>
+              <h3>Cisco Networking Academy Certifications</h3>
+              <p style={{ color: 'var(--accent-secondary)', fontWeight: '600', marginTop: '0.25rem' }}>CCNA (Networks, Switching, Routing), Data Science, Modern AI, Applied AI & Python Essentials 1 & 2</p>
+            </div>
+
+            <div className="certification-card">
+              <span className="card-badge">NPTEL</span>
+              <h3>Introduction to Machine Learning & Industrial Automation</h3>
+              <p style={{ color: 'var(--accent-secondary)', fontWeight: '600', marginTop: '0.25rem' }}>NPTEL Certification Courses</p>
+            </div>
+
+            <div className="certification-card">
+              <span className="card-badge">IBM</span>
+              <h3>Prompt Engineering for Everyone</h3>
+              <p style={{ color: 'var(--accent-secondary)', fontWeight: '600', marginTop: '0.25rem' }}>IBM Certification</p>
+            </div>
+
+            <div className="certification-card">
+              <span className="card-badge">Infosys</span>
+              <h3>Infosys Springboard</h3>
+              <p style={{ color: 'var(--accent-secondary)', fontWeight: '600', marginTop: '0.25rem' }}>Basics of Python & Java Programming Fundamentals</p>
             </div>
           </div>
         </section>
@@ -320,18 +533,18 @@ function App() {
           <div className="services-grid">
             <div className="service-card">
               <i className="fa-solid fa-code service-icon"></i>
-              <h3>Web Development</h3>
-              <p>Building responsive, fast, and highly aesthetic web applications utilizing modern frameworks like React.</p>
+              <h3>Full-Stack & Mobile Development</h3>
+              <p>Building responsive, fast, and highly aesthetic web and mobile applications utilizing React, React Native, and Flutter.</p>
             </div>
             <div className="service-card">
-              <i className="fa-solid fa-server service-icon"></i>
-              <h3>Backend Solutions</h3>
-              <p>Creating scalable and secure APIs and backend systems using Python to power demanding frontend applications.</p>
+              <i className="fa-solid fa-brain service-icon"></i>
+              <h3>AI & ML Integration</h3>
+              <p>Integrating machine learning models, Google Gemini API, OCR, and cloud APIs into intelligent software applications.</p>
             </div>
             <div className="service-card">
               <i className="fa-solid fa-lightbulb service-icon"></i>
-              <h3>Problem Solving</h3>
-              <p>Leveraging strong analytical skills from a Computer Science Engineering background to tackle complex technical challenges.</p>
+              <h3>Software Quality & Testing</h3>
+              <p>Ensuring application stability and high performance through functional, regression, UI/UX testing, and API verification.</p>
             </div>
           </div>
         </section>
@@ -342,12 +555,21 @@ function App() {
           <div className="contact-container">
             <div className="contact-info">
               <h3>Get In Touch</h3>
-              <p>I am currently open for entry-level Software Developer roles or freelance opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+              <p>I am currently open for entry-level Software Developer roles, AI/ML engineering positions, or freelance opportunities. Whether you have a project idea or just want to say hi, feel free to reach out!</p>
+              <div style={{ marginTop: '1.5rem', marginBottom: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: 'var(--text-primary)' }}>
+                  <i className="fa-solid fa-envelope" style={{ color: 'var(--accent-primary)' }}></i>
+                  <a href="mailto:riyarens808@gmail.com" style={{ color: 'var(--text-primary)', textDecoration: 'none' }}>riyarens808@gmail.com</a>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: 'var(--text-primary)' }}>
+                  <i className="fa-solid fa-phone" style={{ color: 'var(--accent-primary)' }}></i>
+                  <a href="tel:+919778461045" style={{ color: 'var(--text-primary)', textDecoration: 'none' }}>+91-9778461045</a>
+                </div>
+              </div>
               <div className="social-links">
                 <a href="https://github.com/riyarens" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i className="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/riya-rens-913889281/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i className="fa-brands fa-linkedin-in"></i></a>
-                <a href="#" aria-label="Twitter"><i className="fa-brands fa-twitter"></i></a>
-                <a href="mailto:contact@riyarens.example" aria-label="Email"><i className="fa-solid fa-envelope"></i></a>
+                <a href="mailto:riyarens808@gmail.com" aria-label="Email"><i className="fa-solid fa-envelope"></i></a>
               </div>
             </div>
             <iframe name="hidden_iframe" id="hidden_iframe" style={{ display: 'none' }}></iframe>
